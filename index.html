@@ -11,69 +11,90 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styless.css" />
   </head>
   <body>
     <!----------------HEADER (main page) --------->
-    <header>
-      <a href="./index.html" class="logo link"
-        ><span class="logoweb">Web</span>Studio</a
-      >
-      <nav>
-        <ul class="header-nav list">
-          <li><a class="link" href="">Студия</a></li>
-          <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="link" href="">Контакты</a></li>
+    <header class="header">
+      <div class="container flex">
+        <a href="./index.html" class="logo link"
+          ><span class="logoweb">Web</span>Studio</a
+        >
+        <nav class="header-nav list">
+          <ul class="header-list">
+            <li><a class="link" href="">Студия</a></li>
+            <li><a class="link" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contact list"> 
+          <li><a class="contact link" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        > 
+          </li>
+          <li> <a class="contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <a class="contact link" href="mailto:info@devstudio.com"
-        >info@devstudio.com</a
-      >
-      <a class="contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+      </div>
     </header>
     <!-------------------------------------------------------------------MAIN (main page)-------------------------->
     <main>
       <section class="main-hero">
+      <div class="container c-flex">
         <h1 class="main-heroartcl">Эффективные решения для вашего бизнеса</h1>
         <button class="main-herobtn" type="button">Заказать услугу</button>
+      </div>
       </section>
-      <section class="title">
-        <ul>
-          <li>
+      <div class="title">
+      <div class="container">
+        <nav class="nav-main-container">
+        <ul class="main-container list">
+          <li class="main-container-item">
             <h3 class="main-title">Внимание к деталям</h3>
             <p class="about-mtitle">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="main-container-item">
             <h3 class="main-title">Пунктуальность</h3>
             <p class="about-mtitle">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="main-container-item">
             <h3 class="main-title">Планирование</h3>
             <p class="about-mtitle">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="main-container-item">
             <h3 class="main-title">Современные технологии</h3>
             <p class="about-mtitle">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
           </li>
+          </nav>
         </ul>
+      </div>
       </section>
+      <!------------------------------------------------------Чем занимается компания ---------------------->
       <section class="main-subtitle">
-        <!------------------------------------------------------Чем занимается компания ---------------------->
+      <div class="container">
         <h2 class="about-msubtitle">Чем мы занимаемся</h2>
-        <ul>
-          <li>
+          <nav>
+          <ul class="main-subtitle-list list">
+          <li class="about-process">
             <img
               src=".//image/main_paige/coding.jpg"
               alt="кодинг"
@@ -81,7 +102,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="about-process">
             <img
               src=".//image/main_paige/mobileversion.jpg"
               alt="мобильная тема"
@@ -89,7 +110,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="about-process">
             <img
               src=".//image/main_paige/color_design.jpg"
               alt="выбор цвета"
@@ -98,56 +119,69 @@
             />
           </li>
         </ul>
+        </nav>
+      </div>
       </section>
       <!-------------------------------------------------------КОМАНДА----------------------->
       <section class="about-team">
+      <div class="container">
         <h2 class="title-team">Наша команда</h2>
-        <ul>
-          <li>
+        <ul class="about-teamcomand list">
+          <li class="about-teamcomand-item">
             <img
               src=".//image/main_paige/employee1.jpg"
               alt="сотрудник 1"
               width="270"
               height="260"
             />
+            <nav class="team-nav">
             <h3 class="subtitle-team">Игорь Демьяненко</h3>
             <p class="ptitle-team" lang="en">Product Designer</p>
+            </nav>
           </li>
-          <li>
+          <li class="about-teamcomand-item">
             <img
               src=".//image/main_paige/employee2.jpg"
               alt="сотрудник 2"
               width="270"
               height="260"
             />
+            <nav class="team-nav">
             <h3 class="subtitle-team">Ольга Репина</h3>
             <p class="ptitle-team" lang="en">Frontend Developer</p>
+            </nav>
           </li>
-          <li>
+          <li class="about-teamcomand-item">
             <img
               src=".//image/main_paige/employee3.jpg"
               alt="сотрудник 3"
               width="270"
               height="260"
             />
+            <nav class="team-nav">
             <h3 class="subtitle-team">Николай Тарасов</h3>
             <p class="ptitle-team" lang="en">Marketing</p>
+            </nav>
           </li>
-          <li>
+          <li class="about-teamcomand-item">
             <img
               src=".//image/main_paige/employee4.jpg"
               alt="сотрудник 4"
               width="270"
               height="260"
             />
+            <nav class="team-nav">
             <h3 class="subtitle-team">Михаил Ермаков</h3>
             <p class="ptitle-team" lang="en">UI Designer</p>
+            </nav>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <!--------------------------------------------FOOTER (main page)------------------------------------>
     <footer class="fcontacts">
+      <nav class="container">
       <a href="./index.html" class="footer-logo link">
         <span class="logoweb">Web</span> Studio
       </a>
@@ -169,6 +203,7 @@
           </li>
         </ul>
       </address>
+      </nav>
     </footer>
   </body>
 </html>

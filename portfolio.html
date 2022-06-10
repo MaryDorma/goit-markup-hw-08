@@ -11,173 +11,219 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styless.css" />
   </head>
   <body>
-    <!----------------HEADER--------->
-    <header>
-      <a href="./index.html" class="logo link">
-        <span class="logoweb">Web</span>Studio</a
-      >
-      <nav>
-        <ul class="header-nav list">
-          <li><a class="link" href="">Студия</a></li>
-          <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="link" href="">Контакты</a></li>
+    <!----------------HEADER (main page) --------->
+    <header class="header header-portf">
+      <div class="container flex">
+        <a href="./index.html" class="logo link"
+          ><span class="logoweb">Web</span>Studio</a
+        >
+        <nav class="header-nav list">
+          <ul class="header-list">
+            <li><a class="link" href="">Студия</a></li>
+            <li><a class="link" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="link" href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contact list">
+          <li>
+            <a class="contact link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="contact link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </nav>
-      <a class="contact link" href="mailto:info@devstudio.com"
-        >info@devstudio.com</a
-      >
-      <a class="contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+      </div>
     </header>
     <!----------------MAIN------------>
     <main class="main-ptitle">
-      <section>
-        <ul class="portfbtn-list">
-          <li class="portfbtn-item">
-            <button type="button">Все</button>
-          </li>
-          <li class="portfbtn-item">
-            <button type="button">Веб-сайты</button>
-          </li>
-          <li class="portfbtn-item">
-            <button type="button">Приложения</button>
-          </li>
-          <li class="portfbtn-item">
-            <button type="button">Дизайн</button>
-          </li>
-          <li class="portfbtn-item">
-            <button type="button">Маркетинг</button>
-          </li>
-        </ul>
-        <ul>
-          <li class="portf-image">
-            <img
-              src="./image/portfolio/website.jpg"
-              alt="веб-сайт"
-              width="370"
-              height="294"
-            />
-            <h2 class="portf-imgtitle">Технокряк</h2>
-            <p class="portf-img-subtitle">Веб-сайт</p>
-          </li>
-          <li class="portf-image">
-            <img
-              src="./image/portfolio/basketplayers.jpg"
-              alt="Постер New Orlean vs Golden Star"
-              width="370"
-              height="294"
-            />
-            <h2 class="portf-imgtitle">
-              Постер<span lang="en"> Orlean vs Golden Star</span>
-            </h2>
-            <p class="portf-img-subtitle">Дизайн</p>
-          </li>
-          <li class="portf-image">
-            <img
-              src="./image/portfolio/seafood.jpg"
-              alt="Ресторан Seafood"
-              width="370"
-              height="294"
-            />
-            <h2 class="portf-imgtitle">
-              Ресторан <span lang="en">Seafood</span>
-            </h2>
-            <p class="portf-img-subtitle">Приложение</p>
-          </li>
-          <li class="portf-image">
-            <img
-              src="./image/portfolio/projectprime.jpg"
-              alt="Проект Prime"
-              width="370"
-              height="294"
-            />
-            <h2 class="portf-imgtitle">Проект <span lang="en">Prime</span></h2>
-            <p class="portf-img-subtitle">Маркетинг</p>
-          </li>
-          <li class="portf-image">
-            <img
-              src="./image/portfolio/projectboxes.jpg"
-              alt="Проект Boxes"
-              width="370"
-              height="294"
-            />
-            <h2 class="portf-imgtitle">Проект <span lang="en">Boxes</span></h2>
-            <p class="portf-img-subtitle">Приложение</p>
-          </li>
-          <li class="portf-image">
-            <img
-              src="./image/portfolio/inspiration.jpg"
-              alt="Inspiration has no Borderss"
-              width="370"
-              height="294"
-            />
-            <h2 class="portf-imgtitle">
-              <span lang="en">Inspiration has no Borders</span>
-            </h2>
-            <p class="portf-img-subtitle">Веб-сайт</p>
-          </li>
-          <li class="portf-image">
-            <img
-              src="./image/portfolio/limitededition.jpg"
-              alt="Издание Limited Edition"
-              width="370"
-              height="294"
-            />
-            <h2 class="portf-imgtitle">
-              Издание <span lang="en">Limited Edition</span>
-            </h2>
-            <p class="portf-img-subtitle">Дизайн</p>
-          </li>
-          <li class="portf-image">
-            <img
-              src="./image/portfolio/labelproject.jpg"
-              alt="Проект LAB"
-              width="370"
-              height="294"
-            />
-            <h2 class="portf-imgtitle">Проект <span lang="en">LAB</span></h2>
-            <p class="portf-img-subtitle">Маркетинг</p>
-          </li>
-          <li class="portf-image">
-            <img
-              src="./image/portfolio/growingbusiness.jpg"
-              alt="Growing Business"
-              width="370"
-              height="294"
-            />
-            <h2 class="portf-imgtitle">
-              <span lang="en">Growing Business</span>
-            </h2>
-            <p class="portf-img-subtitle">Приложение</p>
-          </li>
-        </ul>
-      </section>
+      <div class="container">
+        <section>
+          <ul class="portfbtn-list">
+            <li class="portfbtn-item">
+              <button type="button">Все</button>
+            </li>
+            <li class="portfbtn-item">
+              <button type="button">Веб-сайты</button>
+            </li>
+            <li class="portfbtn-item">
+              <button type="button">Приложения</button>
+            </li>
+            <li class="portfbtn-item">
+              <button type="button">Дизайн</button>
+            </li>
+            <li class="portfbtn-item">
+              <button type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="portf-image-l list">
+            <li class="portf-item-image">
+              <img
+                src="./image/portfolio/website.jpg"
+                alt="веб-сайт"
+                width="370"
+                height="294"
+              />
+              <div class="port-inf-list">
+                <h2 class="portf-imgtitle">Технокряк</h2>
+                <p class="portf-img-subtitle">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="portf-item-image">
+              <img
+                src="./image/portfolio/basketplayers.jpg"
+                alt="Постер New Orlean vs Golden Star"
+                width="370"
+                height="294"
+              />
+              <div class="port-inf-list">
+                <h2 class="portf-imgtitle">
+                  Постер<span lang="en"> Orlean vs Golden Star</span>
+                </h2>
+                <p class="portf-img-subtitle">Дизайн</p>
+              </div>
+            </li>
+            <li class="portf-item-image">
+              <img
+                src="./image/portfolio/seafood.jpg"
+                alt="Ресторан Seafood"
+                width="370"
+                height="294"
+              />
+              <div class="port-inf-list">
+                <h2 class="portf-imgtitle">
+                  Ресторан <span lang="en">Seafood</span>
+                </h2>
+                <p class="portf-img-subtitle">Приложение</p>
+              </div>
+            </li>
+            <li class="portf-item-image">
+              <img
+                src="./image/portfolio/projectprime.jpg"
+                alt="Проект Prime"
+                width="370"
+                height="294"
+              />
+              <div class="port-inf-list">
+                <h2 class="portf-imgtitle">
+                  Проект <span lang="en">Prime</span>
+                </h2>
+                <p class="portf-img-subtitle">Маркетинг</p>
+              </div>
+            </li>
+            <li class="portf-item-image">
+              <img
+                src="./image/portfolio/projectboxes.jpg"
+                alt="Проект Boxes"
+                width="370"
+                height="294"
+              />
+              <div class="port-inf-list">
+                <h2 class="portf-imgtitle">
+                  Проект <span lang="en">Boxes</span>
+                </h2>
+                <p class="portf-img-subtitle">Приложение</p>
+              </div>
+            </li>
+            <li class="portf-item-image">
+              <img
+                src="./image/portfolio/inspiration.jpg"
+                alt="Inspiration has no Borderss"
+                width="370"
+                height="294"
+              />
+              <div class="port-inf-list">
+                <h2 class="portf-imgtitle">
+                  <span lang="en">Inspiration has no Borders</span>
+                </h2>
+                <p class="portf-img-subtitle">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="portf-item-image">
+              <img
+                src="./image/portfolio/limitededition.jpg"
+                alt="Издание Limited Edition"
+                width="370"
+                height="294"
+              />
+              <div class="port-inf-list">
+                <h2 class="portf-imgtitle">
+                  Издание <span lang="en">Limited Edition</span>
+                </h2>
+                <p class="portf-img-subtitle">Дизайн</p>
+              </div>
+            </li>
+            <li class="portf-item-image">
+              <img
+                src="./image/portfolio/labelproject.jpg"
+                alt="Проект LAB"
+                width="370"
+                height="294"
+              />
+              <div class="port-inf-list">
+                <h2 class="portf-imgtitle">
+                  Проект <span lang="en">LAB</span>
+                </h2>
+                <p class="portf-img-subtitle">Маркетинг</p>
+              </div>
+            </li>
+            <li class="portf-item-image">
+              <img
+                src="./image/portfolio/growingbusiness.jpg"
+                alt="Growing Business"
+                width="370"
+                height="294"
+              />
+              <div class="port-inf-list">
+                <h2 class="portf-imgtitle">
+                  <span lang="en">Growing Business</span>
+                </h2>
+                <p class="portf-img-subtitle">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <!---------------------FOOTER-------------->
+
     <footer class="fcontacts">
-      <a href="./index.html" class="footer-logo link">
-        <span class="logoweb">Web</span> Studio
-      </a>
-      <address class="footer-adress">
-        <ul class="adress-list">
-          <li class="adress-item">
-            <a
-              href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
-              target="_blank"
-            >
-              г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li class="footer-contact">
-            <a href="mailto:info@devstudio.com">info@example.com</a>
-          </li>
-          <li class="footer-contact">
-            <a href="tel:+380961111111">+38 099 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+      <nav class="container">
+        <a href="./index.html" class="footer-logo link">
+          <span class="logoweb">Web</span> Studio
+        </a>
+        <address class="footer-adress">
+          <ul class="adress-list">
+            <li class="adress-item">
+              <a
+                href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
+                target="_blank"
+              >
+                г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="footer-contact">
+              <a href="mailto:info@devstudio.com">info@example.com</a>
+            </li>
+            <li class="footer-contact">
+              <a href="tel:+380961111111">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </nav>
     </footer>
   </body>
 </html>

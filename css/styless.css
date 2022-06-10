@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
@@ -9,9 +12,23 @@ body {
 ul {
   list-style: none;
 }
+button {
+  cursor: pointer;
+}
+a {
+  color: currentColor;
+}
+address {
+  font-style: normal;
+}
 .link {
   color: #212121;
   text-decoration: none;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 :root {
   --accent-color: #2196f3;
@@ -20,13 +37,44 @@ ul {
   --wight-color: #ffffff;
   --portfolio-backgrnd: #f5f4fa;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 /*-------------------------------HEADER (main paige & portfolio----------------*/
+.flex {
+  display: flex;
+  align-items: center;
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
   color: #000000;
+
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logoweb {
   font-family: "Raleway";
@@ -34,34 +82,66 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 /* site nav */
+.header-list {
+  display: flex;
+  margin-left: 40px;
+}
 
-.header-nav a {
+.header-list li,
+.header-contact li:not(:last-child) {
+  margin-right: 50px;
+}
+.header-list,
+.header-contact:last-child {
+  margin-right: 0;
+}
+
+.header-list a {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   color: #212121;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-.header-nav .link:hover,
-.header-nav .link:focus {
+.header-list .link:hover,
+.header-list .link:focus {
   color: var(--accent-color);
 }
 .contact {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   color: var(--contact-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
 }
 .contact:hover,
 .contact:focus {
   color: var(--accent-color);
 }
+
+.header-contact {
+  display: flex;
+  margin-left: auto;
+}
+
 /* ------------------------MAIN HERO (main page)---------------------- */
 /* hero */
 .main-hero {
   background-color: #2f303a;
+  text-align: center;
 }
 .main-heroartcl {
   font-weight: 900;
@@ -69,7 +149,11 @@ ul {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--wight-color);
+
+  max-width: 696px;
+  margin: 0 auto;
 }
 .main-herobtn {
   font-family: "Roboto";
@@ -78,8 +162,36 @@ ul {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
   color: var(--wight-color);
   background-color: var(--accent-color);
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: 1px solid transparent;
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  min-width: 200px;
+}
+.c-flex {
+  padding: 200px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* --------------------контейнер (main page)---------------------- */
+.main-container {
+  display: flex;
+  margin-top: 94px;
+}
+.nav-main-container li {
+  margin-right: 30px;
+  min-width: 270px;
+}
+.nav-main-container :last-child {
+  margin-right: 0;
 }
 .main-title {
   font-weight: 700;
@@ -90,12 +202,30 @@ ul {
 .about-mtitle {
   color: var(--sub-color);
   line-height: 1.71;
+
+  margin-top: 10px;
 }
+/* --------------------чем мы занимаемся (main page)---------------------- */
 .about-msubtitle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+
+  padding-top: 94px;
+  text-align: center;
+  margin: 0 auto;
 }
+.main-subtitle {
+  min-width: 1170px;
+}
+.main-subtitle-list {
+  margin-top: 50px;
+  display: flex;
+}
+.about-process:not(:last-child) {
+  margin-right: 30px;
+}
+/* --------------------команда (main page)---------------------- */
 .about-team {
   background-color: #f5f4fa;
 }
@@ -103,6 +233,20 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 264px;
+  padding-top: 94px;
+}
+.about-teamcomand {
+  display: flex;
+  margin-top: 50px;
+}
+.about-teamcomand-item:not(:last-child) {
+  margin-right: 30px;
+}
+.about-teamcomand-item {
+  padding-bottom: 94px;
 }
 .subtitle-team {
   font-weight: 500;
@@ -113,18 +257,35 @@ ul {
   font-size: 16px;
   line-height: 1.18;
   color: var(--sub-color);
+  margin-top: 10px;
 }
+.team-nav {
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+
 /* ---------------------------FOOTER (main page & portfolio)---------------- */
 .fcontacts {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19x;
+  line-height: 1.19;
   color: var(--wight-color);
+  max-width: 145px;
+}
+.footer-adress {
+  margin-top: 20px;
+  max-width: 231px;
+}
+.adress-item,
+.footer-contact {
+  margin-top: 9px;
 }
 .adress-item > a {
   font-style: normal;
@@ -143,6 +304,18 @@ ul {
 }
 
 /* ----------------------------PORTFOLIO MAIN-------------------- */
+.header-portf {
+  border-bottom: 1px solid #ececec;
+}
+.portfbtn-list {
+  display: flex;
+  min-width: 611px;
+  margin-top: 94px;
+  justify-content: center;
+}
+.portfbtn-list li:not(:last-child) {
+  margin-right: 8px;
+}
 
 .portfbtn-item > button {
   font-family: "Roboto";
@@ -151,7 +324,13 @@ ul {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
   background-color: var(--portfolio-backgrnd);
+
+  border-radius: 4px;
+  padding: 6px 22px;
+  display: inline-block;
+  text-align: center;
 }
 .portfbtn-item > button:hover,
 .portfbtn-item > button:focus {
@@ -161,6 +340,7 @@ ul {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+
   background-color: var(--accent-color);
   color: var(--wight-color);
 }
@@ -173,5 +353,22 @@ ul {
 .portf-img-subtitle {
   font-size: 16px;
   line-height: 1.88;
+
   color: var(--contact-color);
+}
+.portf-image-l {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+.portf-item-image {
+  flex-basis: calc((100% -3) / 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  outline: 1px solid #eeeeee;
+}
+
+.port-inf-list {
+  padding: 20px 24px 20px 24px;
 }
