@@ -203,7 +203,7 @@ img {
 /* --------------------чем мы занимаемся (main page)---------------------- */
 .main-subtitle {
   min-width: 1170px;
-  padding: 94px 0 94px 0;
+  padding-bottom: 94px;
 }
 
 .about-msubtitle {
