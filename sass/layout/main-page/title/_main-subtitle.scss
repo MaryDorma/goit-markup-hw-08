@@ -1,0 +1,45 @@
+.main-subtitle {
+  min-width: 1170px;
+  padding-bottom: 94px;
+}
+
+.about-msubtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-subtitle-list {
+  display: flex;
+  margin-top: 50px;
+}
+.about-process {
+  max-width: 370px;
+  position: relative;
+  overflow: hidden;
+}
+.about-process:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-process-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+}

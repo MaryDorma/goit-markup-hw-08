@@ -1,0 +1,29 @@
+@import "./utils/roots.scss";
+
+@import "./base/reset.scss";
+
+@import "./utils/placeholder";
+
+@import "./components/container";
+
+@import "./utils/hidden";
+
+@import "./layout/header";
+
+@import "./layout/main-page/mainhero";
+@import "./components/button/mainhero-bnt";
+
+@import "./layout/main-page/title/main-title";
+@import "./layout/main-page/title/main-subtitle";
+
+@import "./layout/main-page/title/about-team";
+
+@import "./layout/main-page/title/about-client";
+
+@import "./layout/footer";
+@import "./layout/footer-form";
+
+@import "./layout/portfolio/portfolio-main";
+@import "./layout/portfolio/portfolio-project";
+
+@import "./components/modal/modal";
