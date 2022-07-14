@@ -1,11 +1,11 @@
-.fcontacts {
+.footer {
   background-color: #2f303a;
 }
-.footer-left-info {
+.footer-wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-logo {
+.footer-wrapper-logo {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -14,20 +14,20 @@
   color: var(--white-color);
   max-width: 145px;
 }
-.footer-adress {
+.footer-wrapper-adress {
   margin-top: 20px;
   max-width: 231px;
 }
-.adress-item,
-.footer-contact {
+.footer-wrapper-adress-item,
+.footer--wrapper-contact {
   margin-top: 9px;
 }
-.adress-item > a {
+.footer-wrapper-adress-item > a {
   font-style: normal;
   text-decoration: none;
   color: var(--white-color);
 }
-.footer-contact > a {
+.footer--wrapper-contact > a {
   font-style: normal;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
@@ -39,11 +39,11 @@
     color: var(--accent-color);
   }
 }
-.footer-soc-info {
+.footer-soc {
   margin-left: 70px;
   align-items: baseline;
 }
-.footer-soc-message {
+.footer-soc-title {
   width: 144px;
   font-size: 14px;
   font-style: normal;

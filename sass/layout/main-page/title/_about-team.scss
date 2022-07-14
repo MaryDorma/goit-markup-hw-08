@@ -1,9 +1,9 @@
-.about-team {
+.team {
   background-color: #f5f4fa;
   padding: 94px 0 94px 0;
 }
 
-.title-team {
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -11,32 +11,32 @@
   margin: 0 auto;
   max-width: 264px;
 }
-.about-teamcomand {
+.team-list {
   display: flex;
   margin-top: 50px;
 }
-.about-teamcomand-item:not(:last-child) {
+.team-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.subtitle-team {
+.team-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
-.ptitle-team {
+.team-article {
   font-size: 16px;
   line-height: 1.18;
   color: var(--sub-color);
   margin-top: 10px;
 }
 
-.command-soc-list {
+.team-soc-list {
   display: flex;
   justify-content: center;
   margin-top: 16px;
 }
-.command-soc-item {
+.team-soc-item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
@@ -45,7 +45,7 @@
   }
 }
 
-.command-soc-link {
+.team-soc-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,6 +61,14 @@
     color: var(--white-color);
   }
 }
-.command-soc-icon {
+.team-soc-icon {
   fill: currentColor;
+}
+.team-container {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 30px 0 30px 0;
+  background-color: var(--white-color);
 }

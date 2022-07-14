@@ -1,4 +1,4 @@
-.main-hero {
+.hero {
   text-align: center;
 }
 .overlay {
@@ -17,7 +17,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.main-heroartcl {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -36,16 +36,4 @@
   align-items: center;
   flex-direction: column;
   padding: 200px 0;
-}
-.tdesc-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-
-  border-radius: 4px;
-
-  background-color: #f5f4fa;
 }

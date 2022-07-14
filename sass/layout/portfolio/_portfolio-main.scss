@@ -10,16 +10,16 @@
 .main-portfolio {
   padding: 94px 0 94px 0;
 }
-.portfbtn-list {
+.portlio-btn-list {
   display: flex;
   min-width: 611px;
   justify-content: center;
 }
-.portfbtn-item:not(:last-child) {
+.portlio-btn-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfbtn-item > button {
+.portlio-btn-item > button {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -36,8 +36,8 @@
   transition: var(--transition), var(--back-transition),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfbtn-item > button:hover,
-.portfbtn-item > button:focus {
+.portlio-btn-item > button:hover,
+.portlio-btn-item > button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
