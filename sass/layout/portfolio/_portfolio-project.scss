@@ -11,17 +11,17 @@
   margin-top: 30px;
   outline: 1px solid #eeeeee;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portf-item-image:nth-child(-n + 3) {
-  margin-top: 50px;
-}
-.portf-item-image:hover,
-.portf-item-image:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.portf-item-image:hover .portf-image-top-text {
-  transform: translateY(0);
+  &:nth-child(-n + 3) {
+    margin-top: 50px;
+  }
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    .portf-image-top-text {
+      transform: translateY(0);
+    }
+  }
 }
 .portf-image-wrapp {
   position: relative;
@@ -47,16 +47,14 @@
 }
 .portf-img-subtitle {
   margin-top: 4px;
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: var(--contact-color);
 }
 .portf-imgtitle {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-}
-.portf-img-subtitle {
-  font-size: 16px;
-  line-height: 1.88;
-
-  color: var(--contact-color);
 }

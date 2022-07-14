@@ -38,9 +38,6 @@
   display: block;
   transition: var(--transition);
 }
-.header-nav-item:not(:last-child) {
-  margin-right: 50px;
-}
 
 .header-list .link:hover,
 .header-list .link:focus {
@@ -50,6 +47,9 @@
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 .current::after {
   content: "";
@@ -73,10 +73,10 @@
   padding-top: 32px;
   padding-bottom: 32px;
   transition: var(--transition);
-}
-.contact:hover,
-.contact:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .header-contact-item:not(:last-child) {
   margin-right: 50px;
