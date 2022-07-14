@@ -11,7 +11,7 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--wight-color);
+  color: var(--white-color);
   max-width: 145px;
 }
 .footer-adress {
@@ -25,7 +25,7 @@
 .adress-item > a {
   font-style: normal;
   text-decoration: none;
-  color: var(--wight-color);
+  color: var(--white-color);
 }
 .footer-contact > a {
   font-style: normal;
@@ -50,7 +50,7 @@
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .footer-soc-list {
   display: flex;
@@ -73,12 +73,12 @@
   height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  color: var(--white-color);
   transition: var(--transition), var(--back-transition);
   &:hover,
   &:focus {
-    background-color: #2196f3;
-    color: #ffffff;
+    background-color: var(--accent-color);
+    color: var(--white-color);
   }
 }
 .footer-soc-icon {
