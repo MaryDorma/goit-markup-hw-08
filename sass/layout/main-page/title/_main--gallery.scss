@@ -3,7 +3,7 @@
   padding-bottom: 94px;
 }
 
-.gallery-title {
+.gallery__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -12,11 +12,11 @@
   margin: 0 auto;
 }
 
-.gallery-list {
+.gallery__list {
   display: flex;
   margin-top: 50px;
 }
-.gallery-item {
+.gallery__item {
   max-width: 370px;
   position: relative;
   overflow: hidden;
@@ -25,7 +25,7 @@
   }
 }
 
-.gallery-item-title {
+.gallery__item-title {
   display: flex;
   align-items: center;
   justify-content: center;
