@@ -1,6 +1,8 @@
+.about {
+  padding: 94px 0px 94px 0px;
+}
 .about__list {
   display: flex;
-  padding: 94px 0px 94px 0px;
 }
 .about__item:not(:last-child) {
   max-width: 270px;

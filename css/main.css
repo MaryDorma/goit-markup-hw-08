@@ -191,6 +191,10 @@ img {
   margin-right: 10px;
 }
 
+.header-portf {
+  border-bottom: 1px solid #ececec;
+}
+
 .hero {
   text-align: center;
 }
@@ -289,9 +293,12 @@ img {
   height: 70px;
 }
 
+.about {
+  padding: 94px 0px 94px 0px;
+}
+
 .about__list {
   display: flex;
-  padding: 94px 0px 94px 0px;
 }
 
 .about__item:not(:last-child) {
@@ -464,12 +471,9 @@ img {
 }
 
 .footer {
-  background-color: #2f303a;
-}
-
-.footer-wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #2f303a;
 }
 
 .footer-wrapper-logo {
