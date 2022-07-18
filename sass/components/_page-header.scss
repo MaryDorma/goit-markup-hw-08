@@ -81,7 +81,7 @@
 }
 
 // Закрытие меню
-.mobile-nav.is-hidden {
+.mobile-nav .is-hidden {
   opacity: 0;
   pointer-events: none;
 }
