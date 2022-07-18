@@ -20,6 +20,10 @@ img {
   display: block;
 }
 
+no-scroll {
+  overflow: hidden;
+}
+
 .link {
   text-decoration: none;
 }
@@ -79,7 +83,4 @@ p {
 
 button {
   cursor: pointer;
-}
-no-scroll {
-  overflow: hidden;
 }
