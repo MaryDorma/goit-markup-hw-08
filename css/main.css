@@ -434,6 +434,9 @@ button {
   letter-spacing: 0.01em;
   color: var(--text-color);
 }
+.modal-form__field:focus, .modal-form__field:hover {
+  border-color: var(--accent-color);
+}
 
 .modal-form__input {
   width: 100%;
@@ -445,11 +448,12 @@ button {
   outline: transparent;
   background-color: transparent;
 }
+.modal-form__input:focus, .modal-form__input:hover {
+  border-color: var(--accent-color);
+}
 
 .modal-form__input:focus + .modal-form__input-icon,
 .modal-form__input:hover + .modal-form__input-icon {
-  outline: var(--accent-color);
-  border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
