@@ -222,7 +222,7 @@ button {
   }
 }
 
-.mobile-nav.is-hidden {
+.mobile-nav .is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -445,8 +445,10 @@ button {
   outline: transparent;
   background-color: transparent;
 }
-.modal-form__input:focus, .modal-form__input:hover {
-  outline: none;
+
+.modal-form__input:focus + .modal-form__input-icon,
+.modal-form__input:hover + .modal-form__input-icon {
+  outline: var(--accent-color);
   border-color: var(--accent-color);
   fill: var(--accent-color);
 }

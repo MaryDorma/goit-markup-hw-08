@@ -32,13 +32,12 @@
   padding-left: 42px;
   outline: transparent;
   background-color: transparent;
-
-  &:focus,
-  &:hover {
-    outline: none;
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
-  }
+}
+.modal-form__input:focus + .modal-form__input-icon,
+.modal-form__input:hover + .modal-form__input-icon {
+  outline: var(--accent-color);
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .modal-form__input-wrapper {
