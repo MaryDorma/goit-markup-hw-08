@@ -68,9 +68,6 @@ li {
 a {
   text-decoration: none;
 }
-no-scroll {
-  overflow: hidden;
-}
 
 body {
   font-family: "Roboto", "Arial", "Helvetica", sans-serif;
@@ -422,6 +419,10 @@ button {
   fill: var(--accent-color);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -529,7 +530,7 @@ button {
 .modal-form__checkbox-label {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 30px;
 }
 .modal-form__checkbox-label::before {
@@ -602,7 +603,14 @@ button {
 }
 
 .work-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+@media screen and (min-width: 1200px) {
+  .work-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .title-case {
@@ -623,6 +631,11 @@ h3.about-title {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+  .about-title {
+    text-align: center;
+  }
 }
 
 h3.social-title {
@@ -1202,8 +1215,6 @@ h3.social-title {
 
 .team__list {
   text-align: center;
-  margin-bottom: -30px;
-  margin-top: -30px;
 }
 @media screen and (min-width: 768px) {
   .team__list {
@@ -1225,7 +1236,6 @@ h3.social-title {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-color);
   width: 100%;
-  margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
   .team__card {

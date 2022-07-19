@@ -51,10 +51,6 @@ img {
   display: block;
 }
 
-no-scroll {
-  overflow: hidden;
-}
-
 .link {
   text-decoration: none;
 }
@@ -431,6 +427,10 @@ button {
   margin-bottom: 12px;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .modal-form__field {
   position: relative;
   font-size: 12px;
@@ -511,7 +511,7 @@ button {
 .modal-form__checkbox-label {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 30px;
 }
 .modal-form__checkbox-label::before {
@@ -526,6 +526,11 @@ button {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form__checkbox-label {
+    font-size: 14px;
+  }
+}
 .modal-form__link {
   color: var(--accent-color);
   border-bottom: 1px solid var(--accent-color);
@@ -583,9 +588,16 @@ button {
 }
 
 .work-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-size: 28px;
 }
 
+@media screen and (min-width: 1200px) {
+  .work-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
 .title-case {
   font-family: var(--main-font);
   font-style: normal;
@@ -606,6 +618,11 @@ h3.about-title {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 480px) {
+  .about-title {
+    text-align: center;
+  }
+}
 h3.social-title {
   color: var(--white-color);
   font-weight: bold;
@@ -628,6 +645,17 @@ h3.social-title {
   color: #ffffff;
 }
 
+.team__title {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
 .footer {
   display: flex;
   align-items: center;
@@ -1132,12 +1160,12 @@ h3.social-title {
 
 .team__section {
   background-color: var(--secondary-background);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team__list {
   text-align: center;
-  margin-bottom: -30px;
-  margin-top: -30px;
 }
 @media screen and (min-width: 768px) {
   .team__list {
@@ -1158,7 +1186,6 @@ h3.social-title {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-color);
   width: 100%;
-  margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
   .team__card {
